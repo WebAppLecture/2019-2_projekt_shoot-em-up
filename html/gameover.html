@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <canvas id = "gameoverCanvas" height="700" width="1000" style="background-color: black">
+        </canvas>>
+        <script>
+            document.onkeydown = function(){
+                if(window.event && window.event.keyCode == 13) 
+                {
+                    window.location.href = "game.html"
+                }
+            }
+        </script>
+        <script>
+
+            let overCanv = document.getElementById("gameoverCanvas");
+            let ctx = overCanv.getContext("2d");
+            ctx.font = "20px Verdana";
+            ctx.fillStyle="#FFFFFF";
+            ctx.fillText("- Press [Enter] to restart -", 375, 150);
+        </script>
+    </body>
+</html>

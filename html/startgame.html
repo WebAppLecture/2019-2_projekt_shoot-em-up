@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <canvas id = "startGameCanvas" height="700" width="1000" style="background-color: black">
+        </canvas>>
+        
+        <script>
+            document.onkeydown = function(){
+                if(window.event && window.event.keyCode == 13) 
+                {
+                    window.location.href = "game.html"
+                }
+            }
+        </script>
+        <script>
+
+            let startCanv = document.getElementById("startGameCanvas");
+            let ctx = startCanv.getContext("2d");
+            ctx.font = "20px Verdana";
+            ctx.fillStyle="#FFFFFF";
+            ctx.fillText("- Press [Enter] to start the game -", 350, 150);
+            ctx.fillText("Use [WASD] to move", 150, 300);
+            ctx.fillText("Press [Space] to increase your speed", 150, 330);
+            ctx.fillText("Press [Arrow Up] to shoot bullets", 150, 360);
+            ctx.fillText("Press [Arrow Left] to use your shield", 150, 390);
+            ctx.fillText("Press [Arrow Right] to use rapid shots", 150, 420);
+
+        </script>
+    </body>
+</html>
